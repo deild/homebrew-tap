@@ -13,5 +13,5 @@ brew tap deild/tap
 Now you will be able to work on those formulae as if there were in canonical Homebrew repository:
 
 ```bash
-brew install myapp
+brew install mdbook-linkcheck
 ```
