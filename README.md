@@ -14,4 +14,5 @@ Now you will be able to work on those formulae as if there were in canonical Hom
 
 ```bash
 brew install mdbook-linkcheck
+brew install castor_whispers
 ```
