@@ -1,15 +1,14 @@
 class MdbookLinkcheck < Formula
   desc "Backend for mdbook which will check your links for you"
   homepage "https://michael-f-bryan.github.io/mdbook-linkcheck/"
-  url "https://github.com/Michael-F-Bryan/mdbook-linkcheck/archive/v0.7.0.tar.gz"
-  sha256 "e3e444690d4e2c744eb240d4f6bacc6ebfacfadd9f75c61e0c461d7f046b920e"
+  url "https://github.com/Michael-F-Bryan/mdbook-linkcheck/releases/download/v0.7.0/mdbook-linkcheck-v0.7.0-x86_64-apple-darwin.tar.gz"
+  sha256 "832d4981334f09f81f2ed31d5c73bfcf0e7c8ea4c53de1752c84fe8bfe2e1eaa"
   license "MIT"
 
-  depends_on "rust" => :build
   depends_on "mdbook"
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "mdbook-linkcheck"
   end
 
   test do
