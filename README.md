@@ -16,4 +16,5 @@ Now you will be able to work on those formulae as if there were in canonical Hom
 brew install mdbook-linkcheck
 brew install castor_whispers
 brew install dutree
+brew install foldertodmg
 ```
