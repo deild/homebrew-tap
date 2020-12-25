@@ -2,9 +2,9 @@ class CargoRelease < Formula
   desc "cargo subcommand 'release': everything about releasing a rust crate."
   homepage "https://github.com/sunng87/cargo-release"
   url "https://github.com/deild/cargo-release/releases/download/v0.13.9/cargo-release-macos-x86_64-v0.13.9.tar.gz"
-  sha256 "7694784f9ed6a717af5dd1cab0c7de9e019f7da23209e3da7c390ba318f873b6"
+  sha256 "d430aa57d1b425f8386194cc0caae61a97eddb21b2fa87a1b8ccd9161d75e9c1"
   #version "0.1.0"
-  revision 2
+  revision 3
   license "MIT"
 
   def install
