@@ -5,13 +5,11 @@ class MdbookLinkcheck < Formula
   sha256 "832d4981334f09f81f2ed31d5c73bfcf0e7c8ea4c53de1752c84fe8bfe2e1eaa"
   license "MIT"
 
-  depends_on "mdbook"
+  opoo "Renaming our default git branches from 'master' to 'main'."
+  opoo ""
 
-  def install
-    bin.install "mdbook-linkcheck"
-  end
+  odie """To upgrade mdbook-linkcheck, retap it with:
+    brew update-reset $(brew --repo deild/tap)
+    brew upgrade mdbook-linkcheck"""
 
-  test do
-    system "false"
-  end
 end

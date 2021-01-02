@@ -5,18 +5,12 @@ class MacosConfigCheck < Formula
   sha256 "688aa761cc494b3f793fc397ef70296b3c55ef8946d61821c0dbc79e25547772"
   version "0.0.1"
   revision 1
-  license "MIT"
 
-  depends_on macos: [
-    :catalina,
-    :big_sur,
-  ]
+  opoo "Renaming our default git branches from 'master' to 'main'."
+  opoo ""
 
-  def install
-    bin.install "macos-config-check"
-  end
+  odie """To upgrade macos-config-check, retap it with:
+    brew update-reset $(brew --repo deild/tap)
+    brew upgrade macos-config-check"""
 
-  test do
-    system "false"
-  end
 end
